@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Ticket</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <body class="ticket-page"></body>
+
+<div class="ticket-card">
+
+    <h1>🎫 Event Ticket</h1>
+
+    <p><b>Name:</b> <%= ticket.name %></p>
+
+    <p><b>Email:</b> <%= ticket.email %></p>
+
+    <p><b>Event:</b> <%= ticket.eventName %></p>
+
+    <p><b>Ticket ID:</b> <%= ticket.ticketId %></p>
+
+    <img src="<%= ticket.qrCode %>" class="qr">
+
+    <br><br>
+
+    <a href="/download/<%= ticket._id %>" class="btn-download">
+        Download Ticket PDF
+    </a>
+
+</div>
+
+</body>
+</html>

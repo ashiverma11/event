@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+
+  background:
+    linear-gradient(
+      rgba(5,10,25,.80),
+      rgba(10,15,35,.85)
+    ),
+    url("qr-scanner-app\public\images\concerts-bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+  font-family:'Poppins',sans-serif;
+}
+/* FORM PAGE CENTER */
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* TICKET PAGE CENTER */
+.ticket-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* TITLE */
+h1 {
+    color: white;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    font-size: 38px;
+
+    text-shadow:
+    0 0 10px rgba(96,165,250,.5),
+    0 0 20px rgba(168,85,247,.4);
+}
+
+/* FORM CARD */
+form {
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 35px;
+
+    width: 360px;
+
+    border-radius: 24px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+
+    color: white;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background:
+    linear-gradient(
+        135deg,
+        #60a5fa,
+        #a855f7
+    );
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(96,165,250,.35);
+}
+/* TICKET CARD */
+.ticket-card {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    width: 420px;
+
+    text-align: center;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+}
+
+/* QR */
+.qr {
+    width: 200px;
+
+    margin-top: 15px;
+
+    border-radius: 15px;
+
+    border: 3px solid white;
+
+    padding: 10px;
+
+    background: white;
+}
+
+/* DOWNLOAD BUTTON */
+.btn-download {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    transform: scale(1.08);
+}
